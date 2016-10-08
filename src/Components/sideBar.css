@@ -1,0 +1,43 @@
+.sideBarHeader {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  overflow: scroll;
+}
+
+.sideBarHeader > span {
+  font-weight: 300;
+}
+.sideBarContent {
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.sideBarContent  li {
+  padding-top: 5px;
+  list-style: none;
+  color: rgba(124, 124, 124, 0.84);;
+  text-transform: uppercase;
+}
+
+.active {
+  color: violet
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 6px dashed;
+    border-top: 4px solid \9;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.sideBar {
+  background-color: #283545;
+}

@@ -1,0 +1,151 @@
+.form-control-modified {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    padding-left: 25px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    outline: none;
+    border: none;
+}
+
+.searchBox  {
+    margin-top: 5px;
+}
+
+.mainBarHeader {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    overflow: scroll;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.55);
+}
+
+.searchIcon {
+    position: absolute;
+    left: 2px;
+    top : 8px;
+}
+.relativeDiv {
+    position: relative;
+}
+
+.leftTextIcon {
+    position: absolute;
+    right:  1px;
+    top : 12px;
+    font-size: 10px;
+}
+
+.profileView {
+    margin-top: 20px;
+    background-color: white;
+    border : 1px solid rgba(128, 128, 128, 0.55);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.profileHeading {
+    color: black;
+}
+
+.mainbarabsolute {
+    position: fixed;
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
+    background-color: white;
+    box-shadow: 1px 2px #ffffff  inset ;
+}
+
+.cancelbutton {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 10%;
+    border: 1px solid rgb(10, 183, 183);
+    background-color: white;
+    font-size: 10px;
+    color: rgb(10, 183, 183);
+}
+
+.savebutton {
+    padding-bottom: 5px;
+    width: 10%;
+    padding-top: 5px;
+    background-color: rgb(10, 183, 183);
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid rgb(10, 183, 183);
+    font-size: 10px;
+    color: white;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.profileHeaderBtn {
+    margin-top: 2px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 1px solid rgb(10, 183, 183);
+    background-color: white;
+    font-size: 10px;
+    color: rgb(10, 183, 183);
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sectionHeading{
+    font-size: 14px;
+    padding-right: 23px;
+    color: grey;
+}
+
+.sectionSubHeading {
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.5);;
+    padding-right: 10px
+}
+
+.fieldContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.leftButton {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border:none;
+    background-color: white;
+    font-size: 10px;
+    color: rgb(10, 183, 183);
+}
+
+.wholeField {
+    margin-bottom: 35px;
+}
+
+.mainDiv {
+    background-color: rgba(173, 216, 230, 0.35);;
+}
