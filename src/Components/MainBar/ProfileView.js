@@ -84,8 +84,9 @@ class ProfileView extends Component {
 }
 
 function mapToState(state){
+    console.log(state)
     return{
-        section : state
+        section : state.reducer
     }
 }
 
