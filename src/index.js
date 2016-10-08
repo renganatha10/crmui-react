@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers} from 'redux';
 import App from './App';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -10,9 +10,7 @@ import {persistStore, autoRehydrate} from 'redux-persist'
 
 import reducer from './../src/redux/reducer';
 
-const store = createStore(combineReducers({reducer}), undefined,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-    autoRehydrate());
+const store = createStore(combineReducers({reducer}),autoRehydrate())
 
 persistStore(store,{},() =>{
   ReactDOM.render(
