@@ -1,5 +1,5 @@
 .sideBarHeader {
-  padding-top: 10px;
+  padding-top: 22px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -16,10 +16,14 @@
 }
 
 .sideBarContent  li {
-  padding-top: 5px;
+  padding-top: 10px;
   list-style: none;
   color: rgba(124, 124, 124, 0.84);;
   text-transform: uppercase;
+}
+
+.innersideBar > li {
+  padding-top: 15px
 }
 
 .active {

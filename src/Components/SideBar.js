@@ -36,7 +36,7 @@ class SideBar extends Component {
             <div>
               <ul className="sideBarContent" >
                 <li><span className="active" >View</span> <span className="caret"></span>
-                  <ul>
+                  <ul className="innersideBar" >
                     <li><span>Profile</span> </li>
                     <li><span>Sign Up Form</span></li>
                   </ul>

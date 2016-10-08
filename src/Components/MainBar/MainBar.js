@@ -37,12 +37,11 @@ class MainBar extends Component {
               paddingLeft:0,
               paddingRight:0,
               position :'relative' }
-      const absoluteHeight={ top : window.innerHeight - 30, width : this.state.width  }
+      const absoluteHeight={   top : window.innerHeight - 50, width : this.state.width  }
         return (
             <div ref="divVal" style={variableHeightStyle} className="col-md-9  mainDiv">
                 <SearchBar />
                 <ProfileView />
-
                 <div style={absoluteHeight}  className="mainbarabsolute" >
                   <button className="cancelbutton" > Cancel </button>
                   <button className="savebutton" > Save </button>
