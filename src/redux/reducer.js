@@ -56,28 +56,28 @@ export default function(state = initialState,action) {
                 state[Index],
                 ...state.slice(Index + 1)]
         case REORDER_SECTION:
-        if(Math.abs(action.section.from - action.section.to) === 1){
-          const temp = state[action.section.from];
-          const temp2 = state[action.section.to];
-          state[action.section.to] = temp
-          state[action.section.from] = temp2
-          return [...state];
-        } else {
-          if(action.section.from > action.section.to){
-            return [ ...state.slice(0,action.section.to),
-              state[action.section.from],
-              ...state.slice(action.section.to,action.section.from),
-                  ...state.slice(action.section.from + 1),
-                   ]
+          if(Math.abs(action.section.from - action.section.to) === 1){
+            const temp = state[action.section.from];
+            const temp2 = state[action.section.to];
+            state[action.section.to] = temp
+            state[action.section.from] = temp2
+            return [...state];
           } else {
-            const a = action.section.from + 1;
-            const b = action.section.to + 1;
-            return [ ...state.slice(0,action.section.from),
-              ...state.slice(a,b),
-               state[action.section.from],
-                  ...state.slice(action.section.to + 1),
-                   ]
-          }
+            if(action.section.from > action.section.to){
+              return [ ...state.slice(0,action.section.to),
+                state[action.section.from],
+                ...state.slice(action.section.to,action.section.from),
+                    ...state.slice(action.section.from + 1),
+                     ]
+            } else {
+              const a = action.section.from + 1;
+              const b = action.section.to + 1;
+              return [ ...state.slice(0,action.section.from),
+                ...state.slice(a,b),
+                 state[action.section.from],
+                    ...state.slice(action.section.to + 1),
+                     ]
+            }
         }
 
 

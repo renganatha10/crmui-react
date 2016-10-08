@@ -17,6 +17,10 @@
     margin-top: 5px;
 }
 
+.activeContent {
+    border: 2px solid #16a085;
+}
+
 .mainBarHeader {
     padding-top: 10px;
     padding-bottom: 10px;

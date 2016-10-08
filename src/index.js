@@ -10,7 +10,9 @@ import {persistStore, autoRehydrate} from 'redux-persist'
 
 import reducer from './../src/redux/reducer';
 
-const store = createStore(combineReducers({reducer}), undefined, autoRehydrate());
+const store = createStore(combineReducers({reducer}), undefined,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+    autoRehydrate());
 
 persistStore(store,{},() =>{
   ReactDOM.render(

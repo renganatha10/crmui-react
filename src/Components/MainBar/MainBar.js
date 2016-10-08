@@ -42,7 +42,7 @@ class MainBar extends Component {
             <div ref="divVal" style={variableHeightStyle} className="col-md-9  mainDiv">
                 <SearchBar />
                 <ProfileView />
-                <div style={absoluteHeight}  className="mainbarabsolute" >
+                <div style={absoluteHeight} className="mainbarabsolute" >
                   <button className="cancelbutton" > Cancel </button>
                   <button className="savebutton" > Save </button>
                 </div>

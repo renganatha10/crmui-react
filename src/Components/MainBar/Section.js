@@ -39,7 +39,7 @@ class Section extends Component {
 
 
     render() {
-        
+
         const style = {
           overlay : {
             position          : 'fixed',
@@ -74,7 +74,7 @@ class Section extends Component {
                 onDragStart={this.dragStart.bind(this)}
                 onDrop={this.onDrop.bind(this)}
                 onDragOver={this.onDragOver.bind(this)}
-             className="col-md-12 profileView">
+             className="col-md-12 activeContent profileView ">
                 <Modal style={style}  isOpen={this.state.visible}>
                     <FieldModal addField={this.props.addField.bind(this)}
                     sectionName={this.props.name}
